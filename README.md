@@ -1,0 +1,1 @@
+Dette er et prosjekt der jeg lager en personlig porteføljeside med HTML, CSS og JavaScript. Målet er å lage en fin og moderne nettside hvor jeg kan vise frem prosjekter, ferdigheter og kontaktinfo. Siden skal fungere bra både på PC, nettbrett og mobil.
