@@ -52,3 +52,27 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+
+.nav-logo a{
+    text-decoration: none;
+    color: var(--extra-light);
+    font-size: 1.5rem;
+}
+
+.nav-links{
+    display: none;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+link{
+    color: var(--extra-light);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+link:hover{
+    color: var(--primary-color);
+}
