@@ -102,6 +102,11 @@ nav {
     background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/santorini.jpg");
 }
 
+#vernazza{
+    background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/vernazza.jpg");
+}
+
+
 
 header {
     height: 100vh;
