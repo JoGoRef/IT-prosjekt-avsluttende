@@ -330,3 +330,9 @@ header .section__container {
         font-size: 0.8rem;
     }
 }
+
+@media (min-width: 1024px){
+    .display__card{
+        gap: 1rem;
+    }
+}
