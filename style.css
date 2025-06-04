@@ -63,6 +63,8 @@ nav {
     color: var(--extra-light);
 }
 
+
+
 .nav__logo a {
     text-decoration: none;
     color: var(--extra-light);
@@ -88,13 +90,29 @@ nav {
     color: var(--primary-color);
 }
 
+.country__link{
+    text-decoration: none;
+}
+
+#main{
+     background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/bg-1.jpg");
+}
+
+#santorini{
+    background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/santorini.jpg");
+}
+
+
 header {
     height: 100vh;
-    background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/bg-1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
+
 
 header .section__container {
     height: 100%;
@@ -290,7 +308,7 @@ footer h4{
 
 footer p{
     font-style: italic;
-    
+
 }
 
 
