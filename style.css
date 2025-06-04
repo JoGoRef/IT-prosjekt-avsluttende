@@ -6,7 +6,7 @@
     --secondary-color: #e8f1fa;
     --text-dark: #282d31;
     --text-light: #767268;
-    --extra-light: #f3f4f;
+    --extra-light: #f3f4f4;
 
 
     --max-width: 1200px;
@@ -60,6 +60,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: var(--extra-light);
 }
 
 .nav__logo a{
@@ -75,23 +76,23 @@ nav{
     gap: 2rem;
 }
 
-link{
-    color: var(--extra-light);
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 0.3s;
-}
+  .nav__links a {
+      color: var(--extra-light);
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+  }
 
-link:hover{
-    color: var(--primary-color);
-}
+  .nav__links a:hover {
+      color: var(--primary-color);
+  }
 
 header{
     height: 100vh;
-    background-image:linear-gradient(rgba(45,92,132,.5),rgba(45,92,132,.5)
-    ),url("bilder/bg-1.jpg") ;
+    background-image: linear-gradient(rgba(45,92,132,.5), rgba(45,92,132,.5)), url("bilder/bg-1.jpg");
     background-position: center center;
-    background-image: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -118,6 +119,7 @@ header .section__container{
 
 .header__content p{
     text-align: center;
+    line-height: 1.5rem;
 }
 
 
@@ -169,6 +171,46 @@ header .section__container{
 font-style: italic;
 }
 
+.banner__container .section__container{
+    padding: 10rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.banner__container{
+    background-image: linear-gradient(rgba(35,71,103,.5), rgba(35,71,103,.5)), url("bilder/bg-2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner__content{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    color: var(--extra-light);
+}
+
+.banner__content h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.banner__content p{
+    line-height: 1.5rem;
+}
+
+.banner__content button{
+    padding: .5rem 2rem;
+    outline: none;
+    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    cursor: pointer;
+}
 @media (min-width: 640px){
     .nav__links{
         display: flex;
@@ -192,5 +234,18 @@ font-style: italic;
         grid-template-columns: repeat(3, 1fr);
         gap:1rem;
     }
+
 }   
 
+
+@media(min-width: 786px) {
+    .banner__container .section__container{
+        justify-content: flex-end;
+    }
+
+    .banner__content{
+        align-items: flex-end;
+        text-align: right;
+        max-width: 800px;
+    }
+}
