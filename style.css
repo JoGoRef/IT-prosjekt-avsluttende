@@ -137,6 +137,38 @@ header .section__container{
     background-color: var(--primary-color-dark);
 }
 
+.journey__container{
+    background-color: var(--secondary-color);
+}
+
+.journey__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.country__card {
+    background-color: var(--extra-light);
+}
+
+.country__name{
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+.country__name i{
+    font-size: 1.2rem;
+}
+
+.country__name span {
+font-style: italic;
+}
+
 @media (min-width: 640px){
     .nav__links{
         display: flex;
