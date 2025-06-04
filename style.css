@@ -279,6 +279,18 @@ footer h4{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
+}
+
+.social__icons i {
+    padding: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+footer p{
+    font-style: italic;
+    
 }
 
 
