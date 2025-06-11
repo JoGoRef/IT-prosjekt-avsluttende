@@ -349,7 +349,7 @@ footer p {
 .kontakt-container {
     position: absolute;
     max-width: 400px;
-    background: #fff;
+    background: rgba(255,255,255,0.6); /* Gjør boksen gjennomsiktig */
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
