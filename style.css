@@ -110,6 +110,10 @@ nav {
     background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/sanfrancisco.webp");
 }
 
+#navagio{
+    background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/navagio.webp");
+}
+
 
 
 header {
@@ -320,6 +324,14 @@ footer h4{
 footer p{
     font-style: italic;
 
+}
+
+.country__card img {
+    width: 100%;
+    aspect-ratio: 1/1;    /* Gjør bildet kvadratisk og responsivt */
+    object-fit: cover;    /* Beskjærer bildet slik at det alltid fyller rammen */
+    display: block;
+    max-height: 340px;   /* Valgfritt: begrenser høyden på store skjermer */
 }
 
 
