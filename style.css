@@ -90,28 +90,31 @@ nav {
     color: var(--primary-color);
 }
 
-.country__link{
+.country__link {
     text-decoration: none;
 }
 
-#main{
-     background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/bg-1.jpg");
+#main {
+    background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/bg-1.jpg");
 }
 
-#santorini{
+#santorini {
     background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/santorini.jpg");
 }
 
-#vernazza{
+#vernazza {
     background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/vernazza.jpg");
 }
 
-#sanfrancisco{
+#sanfrancisco {
     background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/sanfrancisco.webp");
 }
 
-#navagio{
+#navagio {
     background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/navagio.webp");
+}
+#kontakter {
+    background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/kontakter.jpg");
 }
 
 
@@ -291,24 +294,24 @@ header .section__container {
     grid-area: 1/1/3/3;
 }
 
-footer{
+footer {
     background-color: var(--text-dark);
     color: var(--secondary-color);
 }
 
-footer .section__container{
+footer .section__container {
     display: grid;
     gap: 1.5rem;
     text-align: center;
 
 }
 
-footer h4{
+footer h4 {
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-.social__icons{
+.social__icons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -321,18 +324,87 @@ footer h4{
     cursor: pointer;
 }
 
-footer p{
+footer p {
     font-style: italic;
 
 }
 
 .country__card img {
     width: 100%;
-    aspect-ratio: 1/1;    /* Gjør bildet kvadratisk og responsivt */
-    object-fit: cover;    /* Beskjærer bildet slik at det alltid fyller rammen */
+    aspect-ratio: 1/1;
+    /* Gjør bildet kvadratisk og responsivt */
+    object-fit: cover;
+    /* Beskjærer bildet slik at det alltid fyller rammen */
     display: block;
-    max-height: 340px;   /* Valgfritt: begrenser høyden på store skjermer */
+    max-height: 340px;
+    /* Valgfritt: begrenser høyden på store skjermer */
 }
+
+
+#kontakter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kontakt-container {
+    position: absolute;
+    max-width: 400px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    text-align: center;
+    color: #669ccb;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    color: #282d31;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.8rem;
+    background: #669ccb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;    
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #5681a7;
+}
+
+.success-message {
+    color: green;
+    text-align: center;
+    margin-top: 1rem;
+}
+
 
 
 @media (min-width: 640px) {
@@ -360,23 +432,24 @@ footer p{
         gap: 1rem;
     }
 
-    .display__grid{
-        grid-template-columns: repeat(4,1fr);
+    .display__grid {
+        grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
     }
 
-    .display__card{
+    .display__card {
         gap: 0;
     }
 
-    .display__card i{
+    .display__card i {
         font-size: 1.75rem;
     }
 
-    .display__card h4{
+    .display__card h4 {
         font-size: 1rem;
     }
-    .display__card p{
+
+    .display__card p {
         font-size: .7rem;
     }
 
@@ -394,33 +467,34 @@ footer p{
         text-align: right;
         max-width: 800px;
     }
-    .display__card{
+
+    .display__card {
         gap: .5rem;
     }
 
-    .display__card i{
+    .display__card i {
         font-size: 2.5rem
     }
 
-    .display__card p{
+    .display__card p {
         font-size: 0.8rem;
     }
 }
 
-@media (min-width: 1024px){
-    .display__card{
+@media (min-width: 1024px) {
+    .display__card {
         gap: 1rem;
     }
 
-    .display__card i{
+    .display__card i {
         font-size: 3rem;
     }
 
-    .display__card h4{
+    .display__card h4 {
         font-size: 1.5rem;
     }
 
-    .display__card p{
+    .display__card p {
         font-size: 1rem;
     }
 }
