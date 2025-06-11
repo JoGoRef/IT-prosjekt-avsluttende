@@ -113,6 +113,13 @@ nav {
 #navagio {
     background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/navagio.webp");
 }
+#aonang {
+    background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/aonang.jpg");
+}
+
+#phiphi {
+    background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/phiphi.jpg");
+}
 #kontakter {
     background-image: linear-gradient(rgba(45, 92, 132, .5), rgba(45, 92, 132, .5)), url("bilder/kontakter.jpg");
 }
@@ -215,10 +222,11 @@ header .section__container {
 
 .banner__container {
     background-image: linear-gradient(rgba(35, 71, 103, .5), rgba(35, 71, 103, .5)), url("bilder/bg-2.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
 
 .banner__content {
     display: flex;
@@ -355,7 +363,7 @@ footer p {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-h2 {
+.kontakt-container h2 {
     text-align: center;
     color: #669ccb;
 }
@@ -382,7 +390,7 @@ textarea {
     resize: vertical;
 }
 
-button {
+#kontaktSkjema button {
     margin-top: 1rem;
     width: 100%;
     padding: 0.8rem;
@@ -395,7 +403,7 @@ button {
     transition: background 0.2s;
 }
 
-button:hover {
+#kontaktSkjema button:hover {
     background: #5681a7;
 }
 
